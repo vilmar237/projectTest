@@ -29,6 +29,7 @@ use App\Http\Controllers\afficheController;
 //ici je donne la possibilite au controlleur d'affiche la vue
 Route::get('/', [afficheController::class,'index'])->name('welcome');
 Route::get('/posts/create', [afficheController::class,'create'])->name('create');
+Route::post('/posts/store', [afficheController::class,'store'])->name('store.create');
 Route::get('/posts/{id}', [afficheController::class,'show'])->name('post.show');
 Route::get('/contactez-nous', [afficheController::class,'contact'])->name('contact');
  

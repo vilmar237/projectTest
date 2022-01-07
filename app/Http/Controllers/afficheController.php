@@ -50,6 +50,11 @@ class afficheController extends Controller
   }
 
 
+  public function store(Request $req){
+      dd($req);
+  }
+
+
     public function contact (){
         return view('contact');
     }
