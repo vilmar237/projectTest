@@ -51,7 +51,12 @@ class afficheController extends Controller
 
 
   public function store(Request $req){
-      dd($req);
+      $post=new Post();
+      $post->title=$req->title;
+      $post->content=$req->content;
+      $post->save();
+
+      dd('post cree avec suces');
   }
 
 
